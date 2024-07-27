@@ -8,5 +8,15 @@
 <body>
     <h1>Welcome to my IPTV Playlist</h1>
     <p>This is a simple page to host my IPTV playlist files.</p>
+    <video id="videoPlayer" controls width="640" height="480">
+        <source src="http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN111128BESTVSMGSMG/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUU6FFmRK8Hl0ytyd5e5kWGEwoDIwMxbrlyyVy9x6ZDKnldIYKOjBOUjRyoym5n7Kg0yIYstFTUfqtC14fzxhy5Y" type="application/x-mpegURL">
+        Your browser does not support the video tag.
+    </video>
+    <script>
+        var video = document.getElementById('videoPlayer');
+        video.addEventListener('error', function() {
+            console.error('An error occurred while trying to load the video.');
+        });
+    </script>
 </body>
-</html>
+</html
